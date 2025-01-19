@@ -9,15 +9,19 @@ def test_conditional_check():
     assert conditional_check(15) == "Greater"
     assert conditional_check(5) == "Lesser"
     assert conditional_check(10) == "Equal"
+    print("All tests passed!")
 
 def test_loop_sum():
     assert loop_sum(5) == 15
     assert loop_sum(3) == 6
     assert loop_sum(1) == 1
+    print("All tests passed!")
 
 def test_list_operations():
     assert list_operations([1, 2, 3, 4, 5]) == (15, 5, 1)
     assert list_operations([10, 20, 30]) == (60, 30, 10)
+    print("All tests passed!")
+
 
 def test_dict_operations():
     students = {
@@ -28,10 +32,14 @@ def test_dict_operations():
     }
     result = dict_operations(students)
     assert set(result) == {"John", "Alice", "Eve"}
+    print("All tests passed!")
+
 
 def test_set_operations():
     assert set_operations([1, 2, 3], [2, 3, 4]) == {2, 3}
     assert set_operations([1, 2], [3, 4]) == set()
+    print("All tests passed!")
+
 
 def test_arithmetic_ops():
     result = arithmetic_ops(10, 5)
@@ -39,6 +47,8 @@ def test_arithmetic_ops():
     assert result["difference"] == 5
     assert result["product"] == 50
     assert result["quotient"] == 2.0
+    print("All tests passed!")
+
 
 def test_logical_ops():
     result = logical_ops(True, False)
