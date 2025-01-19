@@ -4,23 +4,25 @@ from assignment import *
 def test_format_string():
     assert format_string("John", 25) == "My name is John and I am 25 years old"
     assert format_string("Alice", 30) == "My name is Alice and I am 30 years old"
+    print("All tests in test_format_string() passed!")
+
 
 def test_conditional_check():
     assert conditional_check(15) == "Greater"
     assert conditional_check(5) == "Lesser"
     assert conditional_check(10) == "Equal"
-    print("All tests passed!")
+    print("All tests in test_conditional_check() passed!")
 
 def test_loop_sum():
     assert loop_sum(5) == 15
     assert loop_sum(3) == 6
     assert loop_sum(1) == 1
-    print("All tests passed!")
+    print("All tests in test_loop_sum() passed!")
 
 def test_list_operations():
     assert list_operations([1, 2, 3, 4, 5]) == (15, 5, 1)
     assert list_operations([10, 20, 30]) == (60, 30, 10)
-    print("All tests passed!")
+    print("All tests in test_list_operations() passed!")
 
 
 def test_dict_operations():
@@ -32,13 +34,13 @@ def test_dict_operations():
     }
     result = dict_operations(students)
     assert set(result) == {"John", "Alice", "Eve"}
-    print("All tests passed!")
+    print("All tests in test_dict_operations() passed!")
 
 
 def test_set_operations():
     assert set_operations([1, 2, 3], [2, 3, 4]) == {2, 3}
     assert set_operations([1, 2], [3, 4]) == set()
-    print("All tests passed!")
+    print("All tests in test_set_operations() passed!")
 
 
 def test_arithmetic_ops():
@@ -47,7 +49,7 @@ def test_arithmetic_ops():
     assert result["difference"] == 5
     assert result["product"] == 50
     assert result["quotient"] == 2.0
-    print("All tests passed!")
+    print("All tests in test_arithmetic_ops() passed!")
 
 
 def test_logical_ops():
@@ -55,9 +57,22 @@ def test_logical_ops():
     assert result["and"] == False
     assert result["or"] == True
     assert result["not_x"] == False
+    print("All tests in test_logical_ops() passed!")
+
 
 def test_bitwise_ops():
     result = bitwise_ops(12, 10)
     assert result["and"] == 8
     assert result["or"] == 14
     assert result["xor"] == 6
+    print("All tests in test_bitwise_ops() passed!")
+
+test_format_string()
+test_conditional_check()
+test_loop_sum()
+test_list_operations()
+test_dict_operations()
+test_set_operations()
+test_arithmetic_ops()
+test_logical_ops()
+test_bitwise_ops()

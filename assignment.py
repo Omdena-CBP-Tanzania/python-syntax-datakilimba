@@ -119,6 +119,7 @@ def logical_ops(x, y):
     logical_results["and"]=x and y
     logical_results["or"]=x or y
     logical_results["not_x"]=not x
+    return(logical_results)
 
 def bitwise_ops(a, b):
     """
@@ -130,8 +131,8 @@ def bitwise_ops(a, b):
         dict: Results of bitwise operations
     """
     return {
-        "AND": a & b,        # Bitwise AND
-        "OR": a | b,         # Bitwise OR
-        "XOR": a ^ b,        # Bitwise XOR
+        "and": a & b,        # Bitwise AND
+        "or": a | b,         # Bitwise OR
+        "xor": a ^ b,        # Bitwise XOR
         
     }
